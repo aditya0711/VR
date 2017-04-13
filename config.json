@@ -1,0 +1,158 @@
+{
+    "story":
+    {
+        "uid": "multiple-media-story",
+        "name": "The Future of VR",
+        "slug": "the-future-of-vr",
+        "description": "The Future of VR",
+        "default": "scene-1",
+
+        "scenes":
+        [
+            {
+                "uid": "scene-1",
+                "name": "The Future of VR",
+                "slug": "the-future-of-vr",
+                "description": "The Future of VR",
+
+                "media":
+                {
+                    "uid": "media-1",
+                    "type": "image",
+
+                    "source":
+                    {
+                        "format": "equi",
+                        "url": "img/vr1.png"
+                    }
+                }
+            },
+
+            {
+                "uid": "scene-2",
+                "name": "360 VR Coaching",
+                "slug": "360-vr-coaching",
+                "description": "360 VR Coaching",
+
+                "media":
+                {
+                    "uid": "media-2",
+                    "type": "video",
+
+                    "source":
+                    {
+                        "format": "equi",
+                        "levels": [
+                            { "url": "video/360 VR Coaching Source.mp4" }
+                        ]
+                    },
+
+                    "options":
+                    {
+                        "autoPlay": true,
+                        "loop": true,
+                        "volume": 0.5
+                    }
+                }
+            },
+
+            {
+                "uid": "scene-3",
+                "name": "Tosolini 360",
+                "slug": "tosolini-360",
+                "description": "Tosolini 360",
+
+                "media":
+                {
+                    "uid": "media-3",
+                    "type": "image",
+
+                    "source":
+                    {
+                        "format": "equi",
+                        "url": "img/tosolini_360.png"
+                    }
+                }
+            },
+
+            {
+                "uid": "scene-4",
+                "name": "Boeing 737",
+                "slug": "boeing-737",
+                "description": "Boeing 737",
+
+                "media":
+                {
+                    "uid": "media-4",
+                    "type": "image",
+
+                    "source":
+                    {
+                        "format": "equi",
+                        "url": "img/theta2.jpg"
+                    }
+                }
+            },
+
+            {
+                "uid": "scene-5",
+                "name": "Interactive Table",
+                "slug": "interactive-table",
+                "description": "Interactive Table",
+
+                "media":
+                {
+                    "uid": "media-5",
+                    "type": "image",
+
+                    "source":
+                    {
+                        "format": "equi",
+                        "url": "img/theta1.jpg"
+                    }
+                }
+            },
+
+            {
+                "uid": "scene-6",
+                "name": "Live360Data",
+                "slug": "live-360-data",
+                "description": "Live360Data",
+
+                "media":
+                {
+                    "uid": "media-6",
+                    "type": "image",
+
+                    "source":
+                    {
+                        "format": "equi",
+                        "url": "img/Live360Data.png"
+                    }
+                }
+            }
+
+        ]
+    },
+
+    "plugins":
+    {
+        "prefix": "plugins/",
+
+        "engines":
+        [
+            {
+                "uid": "org.forgejs.previousnextbuttons",
+                "url": "PreviousNextButtons/"
+            }
+        ],
+
+        "instances":
+        [
+            {
+                "uid": "previousnextbuttons",
+                "engine": "org.forgejs.previousnextbuttons"
+            }
+        ]
+    }
+}
