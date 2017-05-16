@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>html</title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style type="text/css">
+	html,body,.container-fluid,.row,.col-sm-9,.col-sm-3
+	{
+		height: 100%;
+	}
+	.col-sm-12
+	{
+		height: 30%;
+		margin-top: 15px;
+	}
+</style>
+</head>
+<body>
+
+<div class="container-fluid">
+<script src="lib/three.js/three.r83.custom.min.js"></script>
+
+    <!-- Include the Hammer.js library -->
+    <script src="lib/hammer.js/hammer.js"></script>
+
+    <!-- Include the ForgeJS library -->
+    <script type="text/javascript" src="lib/forge/forge.js" ></script>
+    <script type="text/javascript" src="lib/forge/forge.min.js" ></script>
+
+    <!-- Start ForgeJS -->
+
+	<div class="row">
+		<div id="container" class="col-sm-9">
+			
+		</div>
+		<div class="col-sm-3">
+			<div id="container2" class="col-sm-12"><!-- <video width="400" height="320" src="res/video.mp4" controls /> --></div>
+			<div id="container3" class="col-sm-12"><!-- <video width="400" height="320" src="res/video.mp4" controls /> --></div>
+			<div id="container4" class="col-sm-12"><!-- <video width="400" height="320" src="res/video.mp4" controls /> --></div>
+		</div>
+	</div>
+	<script type="text/javascript">
+        // Create a viewer
+        var viewer = new FORGE.Viewer("container", "config.json");
+        var viewer1 = new FORGE.Viewer("container2", "config1.json");
+        var viewer2= new FORGE.Viewer("container3", "config2.json");
+        var viewer3 = new FORGE.Viewer("container4", "config3.json");
+    </script>
+</div>
+
+</body>
+</html>

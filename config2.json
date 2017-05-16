@@ -1,0 +1,45 @@
+{
+    "history": { "enabled": false },
+  "story":
+    {
+        "uid": "video-story-2",
+        "name": "Video Story",
+        "slug": "video-story",
+        "history": { "enabled": false },
+        "description": "This is the simpliest story ever, but with a video",
+
+        "scenes":
+        [
+            {
+                "uid": "scene-2",
+                "name": "First scene",
+                "slug": "first-scene",
+                "description": "This is the first and only scene",
+
+                "media":
+                {
+                    "uid": "media-02",
+                    "type": "video",
+
+                    "source":
+                    {
+                        "format": "equi",
+                        "levels": [
+                            { "url": "res/video.mp4" },
+                            { "url": "res/video.mp4" },
+                            { "url": "res/video.mp4" },
+                            { "url": "res/video.mp4" }
+                        ]
+                    },
+
+                    "options":
+                    {
+                        "autoPlay": true,
+                        "loop": true,
+                        "volume": 0.0
+                    }
+                }
+            }
+        ]
+    }
+}
